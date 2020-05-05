@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "302134297108",
+    "firebase_url": "https://tibetonlinestore-c4382.firebaseio.com",
+    "project_id": "tibetonlinestore-c4382",
+    "storage_bucket": "tibetonlinestore-c4382.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302134297108:android:5f6b61792513fe8b951d01",
+        "android_client_info": {
+          "package_name": "com.example.tibetonlinestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "302134297108-eufv3a9ui1ng7g1nm6a8b340pblbc3k4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tibetonlinestore",
+            "certificate_hash": "5947af780a88eed1c19f9a9ea72edcc2e4b20bef"
+          }
+        },
+        {
+          "client_id": "302134297108-23frre3jfstkqho5rc89i8s489bc93ln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcQNbOpGSXHkTW-Vt19eHQQnEQiUjNBUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "302134297108-23frre3jfstkqho5rc89i8s489bc93ln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

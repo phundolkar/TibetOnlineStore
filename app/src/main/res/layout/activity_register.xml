@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="130dp"
+        android:src="@drawable/logo"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/logo"
+        android:hint="Name"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:layout_marginStart="100dp"
+        android:background="@drawable/input_design"
+
+        />
+    <EditText
+        android:id="@+id/InputPhone"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:hint="Phone number"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:layout_marginStart="100dp"
+        android:background="@drawable/input_design"
+        android:layout_below="@+id/username"
+        />
+    <EditText
+        android:id="@+id/login_Password"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="100dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:background="@drawable/input_design"
+        android:layout_below="@+id/InputPhone"
+        />
+
+
+    <Button
+        android:id="@+id/Button_Reg_login"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
+        android:text="Login"
+        android:textSize="12dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/buttons"
+        android:layout_below="@+id/login_Password"
+        />
+    <Button
+        android:id="@+id/Button_Reg_sign_up"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="100dp"
+        android:text="Already have an account?Sign in?"
+        android:textSize="12dp"
+        android:background="@drawable/input_design"
+        android:layout_below="@+id/Button_Reg_login"
+        />
+
+
+</RelativeLayout>
