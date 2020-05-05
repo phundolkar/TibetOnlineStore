@@ -3,7 +3,9 @@ package com.example.tibetonlinestore;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -12,6 +14,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.StorageReference;
 import com.squareup.picasso.Picasso;
 
 import Prevalent.Prevalent;
@@ -21,6 +24,10 @@ public class SettingActivity extends AppCompatActivity {
 private CircleImageView profileImageView;
 private EditText fullNameEditText, userPhoneEditText, addressEditText;
 private TextView profileChangeTextBtn, closeTextBtn, saveTextBtn;
+private Uri imageUri;
+private String myUrl="";
+private StorageReference storageProfilePictureRef;
+private String checker= "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +42,42 @@ private TextView profileChangeTextBtn, closeTextBtn, saveTextBtn;
         saveTextBtn=(TextView)findViewById(R.id.update_account_settings_btn);
 
         userInfoDisplay(profileImageView,fullNameEditText,userPhoneEditText,addressEditText);
+
+        closeTextBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+             finish();
+            }
+        });
+        saveTextBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                if(checker.equals("clicked"))
+                {
+                    userInfoSaved();
+                }
+                else
+                {
+                    updateOnlyUserInfo();
+                }
+
+            }
+        });
+
+        profileChangeTextBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+             checker="clicked";
+            }
+        });
+    }
+
+    private void userInfoSaved()
+    {
+
     }
 
     private void userInfoDisplay(final CircleImageView profileImageView, final EditText fullNameEditText, final EditText userPhoneEditText, final EditText addressEditText)
