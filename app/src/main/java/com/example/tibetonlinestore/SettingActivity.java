@@ -75,6 +75,11 @@ private String checker= "";
         });
     }
 
+    private void updateOnlyUserInfo()
+    {
+
+    }
+
     private void userInfoSaved()
     {
 
