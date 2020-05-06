@@ -15,6 +15,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.tibetonlinestore.Admin.AdminCategoryActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -29,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
     private Button LoginButton,Button_sign_up;
     private EditText InputNumber,InputPassword;
     private ProgressDialog loadingBar;
-    private TextView AdminLink,NotAdminLink;
+    private TextView AdminLink,NotAdminLink,ForgotPassword;
 
     private String parentDbName="Users";
     private CheckBox chkBoxRememberMe;
@@ -46,9 +47,22 @@ public class LoginActivity extends AppCompatActivity {
         NotAdminLink=(TextView)findViewById(R.id.not_admin_panel_link);
         loadingBar=new ProgressDialog(this);
         Paper.init(this);
+        ForgotPassword=findViewById(R.id.forgot_password);
 
 
         LoginButton = (Button) findViewById(R.id.Button_login);
+
+        ForgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent= new Intent(LoginActivity.this,ResetPasswordActivity.class);
+                intent.putExtra("check","login");
+                startActivity(intent);
+
+            }
+        });
+
         LoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view)
@@ -142,7 +156,7 @@ public class LoginActivity extends AppCompatActivity {
                                 Toast.makeText(LoginActivity.this,"Welcome Admin, you are logged in successfully",Toast.LENGTH_SHORT).show();
                                 loadingBar.dismiss();
 
-                                Intent intent= new Intent(LoginActivity.this,AdminCategoryActivity.class);
+                                Intent intent= new Intent(LoginActivity.this, AdminCategoryActivity.class);
                                 startActivity(intent);
                             }
                             else if(parentDbName.equals("Users"))

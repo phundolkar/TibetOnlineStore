@@ -4,19 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/image9"
+    android:background="@drawable/bg"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="158dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="230dp"
-        android:layout_marginTop="150dp"
-        android:background="#ffffff"
-        android:text="Be you. Explore more!!"
-        android:textSize="16sp"
-        android:textColor="@android:color/black"
-        android:textStyle="italic" />
+
 
     <Button
         android:id="@+id/LoginButton"

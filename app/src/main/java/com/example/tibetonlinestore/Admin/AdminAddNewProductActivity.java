@@ -1,4 +1,4 @@
-package com.example.tibetonlinestore;
+package com.example.tibetonlinestore.Admin;
 
 
 import android.app.ProgressDialog;
@@ -16,6 +16,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.tibetonlinestore.R;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -184,7 +185,7 @@ public class AdminAddNewProductActivity extends AppCompatActivity {
                     {
                     if (task.isSuccessful())
                     {
-                        Intent intent= new Intent(AdminAddNewProductActivity.this,AdminCategoryActivity.class);
+                        Intent intent= new Intent(AdminAddNewProductActivity.this, AdminCategoryActivity.class);
                         startActivity(intent);
                         loadingBar.dismiss();
                         Toast.makeText(AdminAddNewProductActivity.this, "Product is added successfully...", Toast.LENGTH_SHORT).show();

@@ -9,10 +9,10 @@
             android:iconTint="@android:color/white"
             android:title="@string/cart"/>
         <item
-            android:id="@+id/nav_order"
-            android:icon="@drawable/order"
+            android:id="@+id/nav_search"
+            android:icon="@drawable/nav_search"
             android:iconTint="@android:color/black"
-            android:title="@string/order"/>
+            android:title="Search"/>
         <item
             android:id="@+id/nav_category"
             android:icon="@drawable/category"
