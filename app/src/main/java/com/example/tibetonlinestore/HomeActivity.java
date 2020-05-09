@@ -93,7 +93,7 @@ implements NavigationView.OnNavigationItemSelectedListener {
         CircleImageView profileImageView= headerView.findViewById(R.id.user_profile_image);
 
 
-       if(!type.equals("Admin"))
+       if(type.equals("Users"))
        {
            userNameTextView.setText(Prevalent.currentOnlineUser.getName());
 

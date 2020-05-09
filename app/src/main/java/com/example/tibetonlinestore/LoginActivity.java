@@ -30,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
     private Button LoginButton,Button_sign_up;
     private EditText InputNumber,InputPassword;
     private ProgressDialog loadingBar;
-    private TextView AdminLink,NotAdminLink,ForgotPassword;
+    private TextView AdminLink,ForgotPassword;
 
     private String parentDbName="Users";
     private CheckBox chkBoxRememberMe;
@@ -44,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
         InputPassword=(EditText)findViewById(R.id.InputPassword);
         chkBoxRememberMe=(CheckBox) findViewById(R.id.remember_me_check_box);
         AdminLink=(TextView)findViewById(R.id.admin_panel_link);
-        NotAdminLink=(TextView)findViewById(R.id.not_admin_panel_link);
+
         loadingBar=new ProgressDialog(this);
         Paper.init(this);
         ForgotPassword=findViewById(R.id.forgot_password);
@@ -75,23 +75,12 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                LoginButton.setText("Login Admin");
-                AdminLink.setVisibility(View.INVISIBLE);
-                NotAdminLink.setVisibility(View.VISIBLE);
-                parentDbName= "Admins";
+                Intent intent= new Intent(LoginActivity.this,AdminLoginActivity.class);
+                startActivity(intent);
 
             }
         });
-        NotAdminLink.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                LoginButton.setText("Login");
-                AdminLink.setVisibility(View.VISIBLE);
-                NotAdminLink.setVisibility(View.INVISIBLE);
-                parentDbName= "Users";
-            }
-        });
+
         Button_sign_up = (Button) findViewById(R.id.Button_sign_up);
         Button_sign_up.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -143,23 +132,16 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
-                if (dataSnapshot.child(parentDbName).child(phone).exists())
+                if (dataSnapshot.child("Users").child(phone).exists())
                 {
-                    Users usersData= dataSnapshot.child(parentDbName).child(phone).getValue(Users.class);
+                    Users usersData= dataSnapshot.child("Users").child(phone).getValue(Users.class);
 
+                    assert usersData != null;
                     if (usersData.getPhone().equals(phone))
                     {
                         if (usersData.getPassword().equals(password))
                         {
-                            if(parentDbName.equals("Admins"))
-                            {
-                                Toast.makeText(LoginActivity.this,"Welcome Admin, you are logged in successfully",Toast.LENGTH_SHORT).show();
-                                loadingBar.dismiss();
-
-                                Intent intent= new Intent(LoginActivity.this, AdminCategoryActivity.class);
-                                startActivity(intent);
-                            }
-                            else if(parentDbName.equals("Users"))
+                            if(parentDbName.equals("Users"))
                             {
                                 Toast.makeText(LoginActivity.this,"Logged in successfully",Toast.LENGTH_SHORT).show();
                                 loadingBar.dismiss();

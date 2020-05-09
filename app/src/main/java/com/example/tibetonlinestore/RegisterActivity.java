@@ -24,7 +24,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.HashMap;
 
 public class RegisterActivity extends AppCompatActivity {
-    private Button CreateAccountButton;
+    private Button CreateAccountButton,RegButton;
     private EditText InputName,InputPhoneNumber,InputPassword;
 private ProgressDialog loadingBar;
 
@@ -37,6 +37,17 @@ private ProgressDialog loadingBar;
         InputPhoneNumber=(EditText)findViewById(R.id.InputPhone);
         InputPassword=(EditText)findViewById(R.id.login_Password);
         loadingBar= new ProgressDialog(this);
+        RegButton=findViewById(R.id.Button_Reg_sign_up);
+
+        RegButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent= new Intent(RegisterActivity.this,LoginActivity.class);
+                startActivity(intent);
+
+            }
+        });
 
          CreateAccountButton.setOnClickListener(new View.OnClickListener() {
              @Override

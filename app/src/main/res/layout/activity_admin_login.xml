@@ -4,87 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    android:orientation="vertical"
-    tools:context=".RegisterActivity">
-
+    tools:context=".AdminLoginActivity">
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/AdminNumber"
         android:layout_width="150dp"
         android:layout_height="40dp"
         android:layout_marginRight="50dp"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="200dp"
-        android:hint="Name"
-        android:inputType="text"
-        android:textColor="@android:color/white"
-        android:textSize="15dp"
-        android:textStyle="italic"
-        android:layout_marginStart="120dp"
-        android:background="@drawable/input_design"
-
-        />
-    <EditText
-        android:id="@+id/InputPhone"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
         android:hint="Phone number"
         android:inputType="number"
         android:textColor="@android:color/white"
         android:textSize="15dp"
         android:textStyle="italic"
-        android:layout_marginStart="120dp"
+        android:layout_marginStart="100dp"
         android:background="@drawable/input_design"
-        android:layout_below="@+id/username"
+
         />
     <EditText
-        android:id="@+id/login_Password"
+        android:id="@+id/AdminPassword"
         android:layout_width="150dp"
         android:layout_height="40dp"
         android:layout_marginRight="50dp"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="120dp"
+        android:layout_marginStart="100dp"
+        android:layout_centerHorizontal="true"
         android:hint="Password"
         android:inputType="textPassword"
         android:textColor="@android:color/white"
         android:textSize="15dp"
         android:textStyle="italic"
         android:background="@drawable/input_design"
-        android:layout_below="@+id/InputPhone"
+        android:layout_below="@+id/AdminNumber"
         />
 
-
     <Button
-        android:id="@+id/Button_Reg_login"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginLeft="110dp"
-        android:text="Login"
+        android:id="@+id/Admin_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="0dp"
+
+        android:layout_marginRight="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Admin Login"
         android:textSize="12dp"
         android:textColor="@android:color/white"
         android:background="@drawable/buttons"
-        android:layout_below="@+id/login_Password"
+        android:layout_below="@+id/AdminPassword"
         />
     <Button
-        android:id="@+id/Button_Reg_sign_up"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="80dp"
-
-        android:text="Already have an account?Sign in?"
+        android:id="@+id/not_admin_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="Not Admin?"
         android:textSize="12dp"
         android:textColor="@android:color/white"
         android:background="@drawable/buttons"
-        android:layout_below="@+id/Button_Reg_login"
+        android:layout_below="@+id/Admin_login_btn"
         />
-
 
 </RelativeLayout>

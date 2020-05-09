@@ -34,7 +34,7 @@
             android:id="@+id/Tibetan_wear"
             android:layout_width="100dp"
             android:layout_height="90dp"
-            android:src="@drawable/admin1"
+            tools:src="@drawable/admin1"
             />
         <ImageView
             android:id="@+id/Tibetan_ac"
@@ -72,7 +72,6 @@
             android:id="@+id/Tibetan_Home"
             android:layout_width="100dp"
             android:layout_height="150dp"
-            android:layout_marginLeft="20dp"
             android:src="@drawable/admin5"
             android:layout_marginStart="16dp"
             />
