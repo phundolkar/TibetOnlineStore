@@ -32,7 +32,7 @@ public class Admins
     public String getPassword() {
         return password;
     }
-
+// this is dummy commit
     public void setPassword(String password) {
         this.password = password;
     }
