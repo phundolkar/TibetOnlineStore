@@ -1,17 +1,16 @@
 package com.example.tibetonlinestore.model;
 
-public class Admins
-{
-    private String name,phone,password;
-    public Admins()
-    {
+public class Admins {
+    private String name, phone, password;
+
+    public Admins() {
 
     }
 
-    public Admins(String name, String phone,String password) {
+    public Admins(String name, String phone, String password) {
         this.name = name;
         this.phone = phone;
-        this.password=password;
+        this.password = password;
     }
 
     public String getName() {
@@ -29,10 +28,11 @@ public class Admins
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
     public String getPassword() {
         return password;
     }
-// this is dummy commit
+
     public void setPassword(String password) {
         this.password = password;
     }

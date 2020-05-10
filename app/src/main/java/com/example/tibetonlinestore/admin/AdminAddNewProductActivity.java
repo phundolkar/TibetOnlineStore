@@ -47,7 +47,7 @@ public class AdminAddNewProductActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_add_new_product);
-        CategoryName=getIntent().getExtras().get("Category").toString();
+        CategoryName=getIntent().getExtras().get("category").toString();
         ProductImagesRef= FirebaseStorage.getInstance().getReference().child("Product Images");
         ProductsRef=FirebaseDatabase.getInstance().getReference().child("Products");
         loadingBar =new ProgressDialog(this);

@@ -1,4 +1,4 @@
-package com.example.tibetonlinestore.viewholder;
+package com.example.tibetonlinestore.ViewHolder;
 import com.example.tibetonlinestore.R;
 import android.view.View;
 import android.widget.ImageView;

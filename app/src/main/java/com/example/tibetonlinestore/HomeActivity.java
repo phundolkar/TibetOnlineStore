@@ -20,7 +20,7 @@ import android.widget.TextView;
 
 
 import com.example.tibetonlinestore.admin.AdminMaintainProductsActivity;
-import com.example.tibetonlinestore.viewholder.ProductViewHolder;
+import com.example.tibetonlinestore.ViewHolder.ProductViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;

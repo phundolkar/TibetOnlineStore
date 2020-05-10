@@ -137,7 +137,7 @@ import java.util.HashMap;
             {
                 if(dataSnapshot.exists())
                 {
-                    String pName = dataSnapshot.child("pName").getValue().toString();
+                    String pName = dataSnapshot.child("name").getValue().toString();
                     String pPrice= dataSnapshot.child("price").getValue().toString();
                     String pDescription = dataSnapshot.child("description").getValue().toString();
                     String pImage  = dataSnapshot.child("image").getValue().toString();
