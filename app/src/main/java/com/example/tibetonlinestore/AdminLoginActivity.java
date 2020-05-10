@@ -12,16 +12,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.tibetonlinestore.Admin.AdminCategoryActivity;
+import com.example.tibetonlinestore.admin.AdminCategoryActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import Model.Admins;
-import Model.Users;
-import Prevalent.Prevalent;
+import com.example.tibetonlinestore.model.Admins;
 
 public class AdminLoginActivity extends AppCompatActivity
 {

@@ -1,4 +1,4 @@
-package com.example.tibetonlinestore.Admin;
+package com.example.tibetonlinestore.admin;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -21,7 +21,7 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import Model.AdminOrders;
+import com.example.tibetonlinestore.model.AdminOrders;
 
 public class AdminNewOrdersActivity extends AppCompatActivity {
 

@@ -13,14 +13,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.example.tibetonlinestore.ViewHolder.ProductViewHolder;
+import com.example.tibetonlinestore.viewholder.ProductViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
-import Model.Products;
+import com.example.tibetonlinestore.model.Products;
 
 public class SearchProductsActivity extends AppCompatActivity {
     private Button SearchBtn;

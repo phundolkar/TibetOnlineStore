@@ -1,4 +1,4 @@
-package com.example.tibetonlinestore.Admin;
+package com.example.tibetonlinestore.admin;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,13 +11,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.tibetonlinestore.R;
-import com.example.tibetonlinestore.ViewHolder.CartViewHolder;
+import com.example.tibetonlinestore.viewholder.CartViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import Model.Cart;
+import com.example.tibetonlinestore.model.Cart;
 
 public class AdminUserProductsActivity extends AppCompatActivity {
     private RecyclerView productList;

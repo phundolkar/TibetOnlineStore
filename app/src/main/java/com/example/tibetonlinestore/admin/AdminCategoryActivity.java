@@ -1,4 +1,4 @@
-package com.example.tibetonlinestore.Admin;
+package com.example.tibetonlinestore.admin;
 
 import android.content.Intent;
 import android.os.Bundle;

@@ -17,8 +17,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import Model.Users;
-import Prevalent.Prevalent;
+import com.example.tibetonlinestore.model.Users;
+import com.example.tibetonlinestore.prevalent.Prevalent;
 import io.paperdb.Paper;
 
 public class MainActivity extends AppCompatActivity {

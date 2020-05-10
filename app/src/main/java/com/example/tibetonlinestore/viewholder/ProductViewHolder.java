@@ -1,4 +1,4 @@
-package com.example.tibetonlinestore.ViewHolder;
+package com.example.tibetonlinestore.viewholder;
 import com.example.tibetonlinestore.R;
 import android.view.View;
 import android.widget.ImageView;
@@ -7,9 +7,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.tibetonlinestore.Interface.ItemClickListner;
-
-import org.w3c.dom.Text;
+import com.example.tibetonlinestore.onclick.ItemClickListner;
 
 public class ProductViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener
 {

@@ -1,4 +1,4 @@
-package Model;
+package com.example.tibetonlinestore.model;
 
 public class Users
 {

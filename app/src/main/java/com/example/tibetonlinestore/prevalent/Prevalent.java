@@ -1,6 +1,6 @@
-package Prevalent;
+package com.example.tibetonlinestore.prevalent;
 
-import Model.Users;
+import com.example.tibetonlinestore.model.Users;
 
 public class Prevalent
 {

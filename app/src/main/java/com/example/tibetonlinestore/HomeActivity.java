@@ -19,8 +19,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-import com.example.tibetonlinestore.Admin.AdminMaintainProductsActivity;
-import com.example.tibetonlinestore.ViewHolder.ProductViewHolder;
+import com.example.tibetonlinestore.admin.AdminMaintainProductsActivity;
+import com.example.tibetonlinestore.viewholder.ProductViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -29,8 +29,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
-import Model.Products;
-import Prevalent.Prevalent;
+import com.example.tibetonlinestore.model.Products;
+import com.example.tibetonlinestore.prevalent.Prevalent;
 import de.hdodenhof.circleimageview.CircleImageView;
 import io.paperdb.Paper;
 

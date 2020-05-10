@@ -1,4 +1,4 @@
-package com.example.tibetonlinestore.Interface;
+package com.example.tibetonlinestore.onclick;
 
 import android.view.View;
 

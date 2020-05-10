@@ -20,7 +20,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.HashMap;
 
-import Prevalent.Prevalent;
+import com.example.tibetonlinestore.prevalent.Prevalent;
 
 public class ConfirmFinalOrderActivity extends AppCompatActivity {
     private EditText nameEditText, phoneEditText,addressEditText,cityEditText;

@@ -1,4 +1,4 @@
-package com.example.tibetonlinestore.ViewHolder;
+package com.example.tibetonlinestore.viewholder;
 
 import android.view.View;
 import android.widget.TextView;
@@ -6,7 +6,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.tibetonlinestore.Interface.ItemClickListner;
+import com.example.tibetonlinestore.onclick.ItemClickListner;
 import com.example.tibetonlinestore.R;
 
 public class CartViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener

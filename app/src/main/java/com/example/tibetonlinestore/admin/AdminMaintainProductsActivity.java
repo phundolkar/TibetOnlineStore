@@ -1,4 +1,4 @@
- package com.example.tibetonlinestore.Admin;
+ package com.example.tibetonlinestore.admin;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;

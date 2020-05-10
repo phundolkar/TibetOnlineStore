@@ -1,4 +1,4 @@
-package Model;
+package com.example.tibetonlinestore.model;
 
 public class Cart {
     private String pid,pName,price,quantity,discount;

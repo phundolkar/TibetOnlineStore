@@ -23,7 +23,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.HashMap;
 
-import Prevalent.Prevalent;
+import com.example.tibetonlinestore.prevalent.Prevalent;
 
 public class ResetPasswordActivity extends AppCompatActivity
 {
